@@ -12,7 +12,11 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..', 'uploads'), {
     prefix: '/uploads/',
   });
-
+ app.useStaticAssets(join(__dirname, '..', 'uploads'), {
+    prefix: '/powerPoint/',
+  });
+  await app.listen(3001, '0.0.0.0');
+  
   await app.listen(3000, '0.0.0.0');
 }
 bootstrap();
