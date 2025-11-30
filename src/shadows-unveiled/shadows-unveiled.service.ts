@@ -87,7 +87,8 @@ export class ShadowsUnveiledService {
       });
 
       const savedRegistration = await registration.save();
-
+      console.log({ savedRegistration });
+      console.log(process.env);
       // Send confirmation emails to all participants
       await this.sendConfirmationEmails(savedRegistration);
 
