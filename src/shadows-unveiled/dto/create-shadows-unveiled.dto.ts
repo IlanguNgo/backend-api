@@ -20,6 +20,12 @@ export class ParticipantDto {
 
   @IsString()
   phoneNumber: string;
+
+  @IsString()
+  instagramId: string;
+
+  @IsBoolean()
+  followedPage: boolean;
 }
 
 export class EventSubmissionDto {

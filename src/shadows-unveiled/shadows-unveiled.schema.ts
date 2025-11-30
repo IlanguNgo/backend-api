@@ -13,6 +13,12 @@ class Participant {
 
   @Prop({ required: true })
   phoneNumber: string;
+
+  @Prop({ required: false })
+  instagramId: string;
+
+  @Prop({ required: false })
+  followedPage: boolean;
 }
 
 class EventSubmission {
