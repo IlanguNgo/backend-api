@@ -24,6 +24,7 @@ export class MailService {
     return await this.transporter.sendMail({
       from: this.config.get('MAIL_USER'),
       to,
+      cc: this.config.get('MAIL_CC'),
       subject,
       html: content,
     });
